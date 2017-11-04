@@ -12,7 +12,6 @@ s_2 = 'f98neroi4nr0c3n30i'
 s_3 = "kdno400wenwkowe00koijn35pijnp46ij7k5j78p3kj546p465jnpoj35po6j345"
 
 
-# 
 def func(s_arg):
     if 30 <= len(s_arg) <= 50:
         count_char = re.findall(r'\D', s_arg)
@@ -33,7 +32,6 @@ def func(s_arg):
 print(func(s_1))
 print(func(s_2))
 print(func(s_3))
-
 
 
 if __name__ == "__main__":

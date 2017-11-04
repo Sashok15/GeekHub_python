@@ -8,8 +8,8 @@
 # enter the number in func season(3) - it will be the month  and get season
 def season(n):
     dc = {1: 'winter', 2: 'winter', 3: 'spring',
-          4: 'spring',5: 'spring', 6: 'summer',
-          7: 'summer',8: 'summer', 9: 'autumn',
+          4: 'spring', 5: 'spring', 6: 'summer',
+          7: 'summer', 8: 'summer', 9: 'autumn',
           10: 'autumn', 11: 'autumn', 12: 'winter'}
     return dc.get(n, 'Eto fiasko, bratan. Try again')
 
