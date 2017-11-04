@@ -32,7 +32,3 @@ def func(s_arg):
 print(func(s_1))
 print(func(s_2))
 print(func(s_3))
-
-
-if __name__ == "__main__":
-    pass

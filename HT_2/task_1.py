@@ -46,6 +46,3 @@ def season_2(n):
         return 'Eto fiasko, bratan. Try again'
 
 print(season_2(6))
-
-if __name__ == "__main__":
-    pass

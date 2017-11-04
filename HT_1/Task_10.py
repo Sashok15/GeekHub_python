@@ -16,6 +16,3 @@ def update_dict(*dic):
     return dictionary
 
 print(update_dict(dic1, dic2, dic3))
-
-if __name__ == "__main__":
-    pass

@@ -24,6 +24,3 @@ def call_all_function(name, age, pet):
     return which_name(name)+which_age(age)+which_pet(pet)
 
 print(call_all_function('sashka', 20, 'dog'))
-
-if __name__ == "__main__":
-    pass

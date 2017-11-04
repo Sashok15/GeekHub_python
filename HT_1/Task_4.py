@@ -9,6 +9,3 @@ def concatenate_string(*args):
          k += arg
     return k
 print(concatenate_string(a, b, c))
-
-if __name__ == "__main__":
-    pass

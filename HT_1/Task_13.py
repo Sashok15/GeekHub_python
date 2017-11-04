@@ -11,7 +11,3 @@ for key, value in dictionary.items():
 
 print("max", k)
 print("min", m)
-
-
-if __name__ == "__main__":
-    pass

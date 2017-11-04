@@ -13,7 +13,3 @@ for i in color_list_1:
     if i not in color_list_2:
         a.append(i)
 print(set(a))
-
-if __name__ == "__main__":
-    pass
-

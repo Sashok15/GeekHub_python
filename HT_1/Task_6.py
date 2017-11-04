@@ -10,6 +10,3 @@ if s in a:
     print("True")
 else:
     print("False")
-
-if __name__ == "__main__":
-    pass

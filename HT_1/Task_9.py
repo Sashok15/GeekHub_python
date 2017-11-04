@@ -4,7 +4,3 @@
 li = [(), (), ('',), ('a', 'b'), ('a', 'b', 'c'), ('d')]
 li = [i for i in li if i != ()]
 print(li)
-
-
-if __name__ == "__main__":
-    pass

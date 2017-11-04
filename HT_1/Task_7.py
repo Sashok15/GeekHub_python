@@ -4,6 +4,3 @@ s = ''
 for i in a:
         s += str(i)
 print(s)
-
-if __name__ == "__main__":
-    pass

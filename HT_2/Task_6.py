@@ -13,7 +13,3 @@ def is_my_name(number):
     return number
 
 print(is_my_name(20))
-
-
-if __name__ == '__main__':
-    pass

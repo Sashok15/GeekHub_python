@@ -8,6 +8,3 @@ for i in a:
     else:
         k += i
 print(k)
-
-if __name__ == "__main__":
-    pass

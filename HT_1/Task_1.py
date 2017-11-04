@@ -9,7 +9,4 @@ n = 1, 5, 7, 23
 print(list(n))
 print(n)
 
-if __name__ == "__main__":
-    pass
-
 

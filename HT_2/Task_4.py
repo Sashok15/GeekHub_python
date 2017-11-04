@@ -26,6 +26,3 @@ def func(x, y):
 
 
 print(func(x, y))
-
-if __name__ == "__main__":
-    pass

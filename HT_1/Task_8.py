@@ -8,6 +8,3 @@ for i in range(len(li)):
     li[i][-1] = 100
     li[i] = tuple(li[i])
 print(li)
-
-if __name__ == "__main__":
-    pass

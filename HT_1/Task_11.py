@@ -6,7 +6,3 @@ for key, value in dic.items():
     if value not in res_dic.values():
         res_dic[key] = value
 print(res_dic)
-
-
-if __name__ == "__main__":
-    pass
