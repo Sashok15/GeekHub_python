@@ -1,7 +1,6 @@
 import os
 import re
 import csv
-from itertools import groupby
 
 folder_reports = "C:/Users/sashok/GeekHub/GeekHub_python/HT_4/reports"
 
@@ -16,7 +15,7 @@ with open("openerp-server.log", "r") as log:
 title_col = ['line_id', 'marker', 'date_time', 'description']
 path = "reports/all_data.csv"
 with open(path, "w", newline='') as f:  # create  file all_data.csv
-    writer = csv.writer(f, delimiter=' ', quotechar='|', quoting=csv.QUOTE_ALL)
+    writer = csv.writer(f, quoting=csv.QUOTE_ALL)
     writer.writerow(title_col)
     line_id = 1
     for line in result:
@@ -53,7 +52,7 @@ for i in unique_desc:
 title_col = ['count', 'marker', 'date_time', 'description']
 path = "reports/unique.csv"
 with open(path, "w", newline='') as f:  # write unique rows in unique.csv
-    writer = csv.writer(f, delimiter=' ', quotechar='|', quoting=csv.QUOTE_ALL)
+    writer = csv.writer(f, quoting=csv.QUOTE_ALL)
     writer.writerow(title_col)
     for line in unique:
         list_col = [line[0], line[1], line[2], line[3]]
