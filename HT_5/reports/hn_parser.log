@@ -648,3 +648,91 @@
 2017-11-18 22:49:30,356:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
 2017-11-18 22:49:31,438:INFO:found all files by filter
 2017-11-18 22:49:31,452:INFO:writed records in file by filter
+2017-11-18 23:34:11,295:INFO:Program started
+2017-11-18 23:34:11,295:INFO:User selected true-category: newstories
+2017-11-18 23:34:11,296:INFO:Check category in url
+2017-11-18 23:34:11,826:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:34:12,813:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:34:13,482:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:34:14,154:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:34:14,987:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:34:15,656:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:34:16,348:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:34:17,035:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:34:17,733:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:34:18,416:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:34:19,084:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:34:19,815:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:34:20,511:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:34:21,204:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:34:21,880:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:34:22,825:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:34:23,484:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:34:24,207:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:34:24,950:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:34:25,752:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:34:26,480:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:34:27,142:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:34:27,828:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:34:28,546:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:34:29,250:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:34:29,941:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:34:30,655:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:34:31,310:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:35:55,998:INFO:Program started
+2017-11-18 23:35:55,999:INFO:User selected true-category: showstories
+2017-11-18 23:35:55,999:INFO:Check category in url
+2017-11-18 23:35:56,017:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:35:56,845:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:35:57,598:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:35:58,264:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:35:58,940:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:35:59,637:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:36:00,296:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:36:00,968:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:36:01,625:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:36:02,603:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:36:03,254:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:36:03,913:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:36:04,607:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:36:05,279:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:36:06,165:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:36:06,862:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:36:07,556:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:36:08,976:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:36:09,646:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:36:10,334:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:36:11,005:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:36:11,687:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:36:12,372:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:36:13,077:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:36:13,909:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:36:14,640:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:36:15,313:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:36:16,029:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:36:16,713:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:36:17,406:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:36:18,107:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:36:18,817:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:36:19,507:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:36:20,231:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:36:20,937:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:36:21,680:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:36:22,703:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:36:23,407:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:36:24,121:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:36:24,788:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:36:25,479:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:36:26,173:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:36:26,935:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:36:27,694:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:36:28,377:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:36:29,037:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:36:29,706:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:36:30,404:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:36:31,596:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:36:32,332:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:36:33,024:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:36:33,808:INFO:Starting new HTTPS connection (1): hacker-news.firebaseio.com
+2017-11-18 23:36:34,503:INFO:found all files by filter
+2017-11-18 23:36:34,505:INFO:writed records in file by filter

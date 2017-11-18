@@ -3,6 +3,7 @@ import os
 import requests
 import csv
 import logging
+import re
 
 from config import folder_path, csv_path, logging_path, \
     url_for_ask, url_for_job, url_for_new, url_for_show, \
@@ -71,7 +72,8 @@ for item in data:
         response = requests.get(url, timeout=5)
         item_info = response.json()
         if item_info['score'] >= score and item_info['time'] >= from_date:
-            category_info.append(item_info)
+            info = re.sub('<.+>', '', str(item_info))
+            category_info.append(info)
     except UnicodeEncodeError:
         logging.ERROR('This is an error message. Unicode encode trouble. '
                       'Check data in request!!!')
