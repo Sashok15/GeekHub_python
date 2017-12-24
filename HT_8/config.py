@@ -1,9 +1,11 @@
-URL = 'http://quotes.toscrape.com/'
-URL_1 = 'https://www.expireddomains.net/register-deleted-domains/'
-
 PATH_REPORTS = './reports'
-CSV_PATH = "reports/report.csv"
-
+# config for parser
+URL = 'http://quotes.toscrape.com/'
+CSV_PATH = 'reports/report.csv'
+TXT_PATH = 'reports/report.txt'
+XLS_PATH = 'reports/report.xls'
+JSON_PATH = 'reports/report.json'
+TXT_PATH_FOR_SEARCH = 'reports/report_for_search.txt'
 # text
 text_data = []
 
@@ -21,4 +23,8 @@ tags_text = []
 tags_author = []
 tags_author_url = []
 
-result = {}
+found_list_authors = []
+author_info_for_search = []
+full_info_list = []
+
+
