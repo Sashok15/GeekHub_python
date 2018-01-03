@@ -5,7 +5,6 @@ CSV_PATH = 'reports/report.csv'
 TXT_PATH = 'reports/report.txt'
 XLS_PATH = 'reports/report.xls'
 JSON_PATH = 'reports/report.json'
-TXT_PATH_FOR_SEARCH = 'reports/report_for_search.txt'
 # text
 text_data = []
 

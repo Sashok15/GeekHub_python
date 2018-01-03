@@ -1,14 +1,19 @@
 import requests
 import xlsxwriter
 import json
+import re
 import csv
 import os
+import logging
 
 from bs4 import BeautifulSoup
 from config import *
 
 if not os.path.exists(PATH_REPORTS):
     os.makedirs(PATH_REPORTS)
+
+logging.basicConfig(filename='reports/report.log', level=logging.INFO,
+                    format='%(asctime)s:%(levelname)s:%(message)s')
 
 
 def get_info_site(my_url):
@@ -21,35 +26,42 @@ id_author = 0
 
 def parse(html):
     soup = BeautifulSoup(html.decode('utf-8'), 'lxml')
+    logging.info('parse start')
     for item in soup.find_all('div', class_='quote'):
         tags_n = []
         tags_u = []
-        # print(item)
         text_data.append(item.contents[1].contents[0])
+        quote_for_search = item.contents[1].contents[0]
+
         author_name.append(item.contents[3].contents[1].contents[0])
+        author_name_for_search = item.contents[3].contents[1].contents[0]
+
         author_url.append(item.contents[3].contents[3].get('href'))
+        author_url_for_search = item.contents[3].contents[3].get('href')
         for i in item.contents[5].find_all('a'):
             tags_n.append(i.text)
             tags_u.append(i.get('href'))
         tags_name.append(tags_n)
+        tags_name_for_search = tags_n
+
         tags_url.append(tags_u)
+        tags_url_for_search = tags_u
         global id_author
         id_author += 1
-        author_info_for_search.append({'text': text_data,
-                                       'author': {'author_name': author_name,
-                                                  'author_url': author_url,
+        author_info_for_search.append({'text': quote_for_search,
+                                       'author': {'author_name': author_name_for_search,
+                                                  'author_url': author_url_for_search,
                                                   'id': id_author,
                                                   },
-                                       'tags': {'tags_name': tags_name,
-                                                'tags_url': tags_url}})
-
-    for i in author_url:
-        soup_for_author = BeautifulSoup(get_info_site(URL + i), 'lxml')
-        for ele in soup_for_author.find_all('div', class_='author-details'):
-            author_born_date.append(ele.contents[2].contents[2].contents[0])
-            author_born_place.append(ele.contents[2].contents[4].contents[0])
-            author_about.append(ele.find('div', class_='author-description').contents[0][:100])
-
+                                       'tags': {'tags_name': tags_name_for_search,
+                                                'tags_url': tags_url_for_search}})
+        for i in author_url:
+            logging.info('parse authors')
+            soup_for_author = BeautifulSoup(get_info_site(URL + i), 'lxml')
+            for ele in soup_for_author.find_all('div', class_='author-details'):
+                author_born_date.append(ele.contents[2].contents[2].contents[0])
+                author_born_place.append(ele.contents[2].contents[4].contents[0])
+                author_about.append(ele.find('div', class_='author-description').contents[0][:100])
     for urls in tags_url:
         tags_text_temp, tags_author_temp, tags_author_url_temp = [], [], []
         for url_tag in urls:
@@ -62,6 +74,7 @@ def parse(html):
             tags_author.append(tags_author_temp)
             tags_author_url.append(tags_author_url_temp)
 
+    logging.info('add info in full_info_list')
     full_info_list.append({'text': text_data,
                            'author': {'author_name': author_name,
                                       'author_url': author_url,
@@ -73,28 +86,8 @@ def parse(html):
                                     'tags_text': tags_text,
                                     'tags_author': tags_author,
                                     'tags_author_url': tags_author_url}})
-    print(author_info_for_search)
 
     return full_info_list
-
-
-def clear_data():
-    # text
-    text_data.clear()
-    # authors
-    author_name.clear()
-    author_url.clear()
-    author_born_date.clear()
-    author_born_place.clear()
-    author_about.clear()
-    # tags
-    tags_name.clear()
-    tags_url.clear()
-    tags_text.clear()
-    tags_author.clear()
-    tags_author_url.clear()
-
-    full_info_list.clear()
 
 
 def write_to_csv():
@@ -114,6 +107,8 @@ def write_to_csv():
             writer.writerow(item['tags']['tags_author'])
             writer.writerow(item['tags']['tags_author_url'])
 
+    logging.info('write data in csv file')
+
 
 def write_to_txt():
     with open(TXT_PATH, "a", newline='', encoding='utf8') as f:
@@ -129,6 +124,8 @@ def write_to_txt():
             f.write(str(item['tags']['tags_text']))
             f.write(str(item['tags']['tags_author']))
             f.write(str(item['tags']['tags_author_url']))
+
+        logging.info('write data in txt file')
 
 
 def write_to_xls():
@@ -172,41 +169,46 @@ def write_to_xls():
         worksheet.write(row, col + 1, str(item['tags']['tags_author_url']))
         row += 1
 
+    logging.info('write data in xls file')
+
 
 def write_to_json():
     with open(JSON_PATH, 'a') as f:
         json.dump(full_info_list, f)
 
 
-def write_to_txt_search():
-    with open(TXT_PATH_FOR_SEARCH, 'a', encoding='utf8') as f:
-        for item in author_info_for_search:
-            f.write(str(item['text']))
-            f.write(str(item['author']['author_name']))
-            f.write(str(item['author']['author_url']))
-            f.write(str(item['author']['id']))
-            f.write(str(item['tags']['tags_name']))
-            f.write(str(item['tags']['tags_url']))
+def write_to_json_search():
+    with open('reports/for_search.json', 'a') as f:
+        json.dump(author_info_for_search, f)
+
+    logging.info('write data in json_search_file')
 
 
-def read_from_txt():
-    with open(TXT_PATH_FOR_SEARCH, 'r') as f:
-        return f.readline()
+def read_json_search():
+    with open('reports/for_search.json') as json_data:
+        result = json.load(json_data)
+    return result
 
 
-def find_authors(*author_id):
-    pass
+def find_author(*id_authors):
+    for id_ in id_authors:
+        for item in read_json_search():
+            id_found_author = re.findall('\'id\': (\d{1,2})', str(item))
+            if str(id_) in id_found_author:
+                print(id_)
+                print(item)
+                logging.info('found the author id - ' + str(id_))
 
 
 if __name__ == '__main__':
-    for i in range(1, 10):
-        parse(get_info_site(URL + '/page/' + str(i) + '/'))
-    # parse(get_info_site(URL))
-        write_to_csv()
-        write_to_txt()
-        write_to_json()
-        write_to_xls()
-        clear_data()
-    # write_to_txt_search()
-    # print(read_from_txt())
-    # print(find_authors(1, 2))
+    for i in range(1, 11):
+        try:
+            parse(get_info_site(URL + '/page/' + str(i) + '/'))
+        except:
+            parse(get_info_site(URL + '/page/' + str(i) + '/'))
+    write_to_csv()
+    write_to_txt()
+    write_to_json()
+    write_to_xls()
+    write_to_json_search()
+    find_author(1, 2, 5, 17)
