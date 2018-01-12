@@ -20,3 +20,14 @@ URL_FOR_SHOW = 'https://hacker-news.firebaseio.com/v0/' \
                'showstories.json?print=pretty'
 URL_FOR_JOB = 'https://hacker-news.firebaseio.com/v0/' \
               'jobstories.json?print=pretty'
+
+category_info_ask = []
+category_info_show = []
+category_info_new = []
+category_info_job = []
+category_info = []
+list_id = []
+
+
+
+
