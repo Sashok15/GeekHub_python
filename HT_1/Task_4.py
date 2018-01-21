@@ -4,8 +4,10 @@ a, b, c = 'aaa', 'bbb', 'ccc'
 
 
 def concatenate_string(*args):
-    k = ''
+    string = ''
     for arg in args:
-         k += arg
-    return k
+        string += arg
+    return string
+
+
 print(concatenate_string(a, b, c))

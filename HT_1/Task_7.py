@@ -1,6 +1,6 @@
 """ Write a script to concatenate all elements in a list into a string and print it """
-a = ['qew', 32, 'kilo']
-s = ''
-for i in a:
-        s += str(i)
-print(s)
+elemets = ['qew', 32, 'kilo']
+string = ''
+for el in elements:
+    string += str(el)
+print(string)

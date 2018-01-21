@@ -3,10 +3,10 @@
         3 -> [1, 5, 8, 3] : True
         -1 -> (1, 5, 8, 3) : False """
 
-s = int(input())
+num = int(input())
 
-a = [i for i in range(1, 10)]
-if s in a:
+numbers = [i for i in range(1, 10)]
+if num in numbers:
     print("True")
 else:
     print("False")

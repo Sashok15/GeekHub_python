@@ -6,10 +6,10 @@
         Expected Output :
         {'Black', 'White'} """
 
-a = []
+unique_colors = []
 color_list_1 = {"White", "Black", "White", "Red", "Green"}
 color_list_2 = {"Red", "Green"}
-for i in color_list_1:
-    if i not in color_list_2:
-        a.append(i)
-print(set(a))
+for color_1 in color_list_1:
+    if color_1 not in color_list_2:
+        unique_colors.append(color_1)
+print(set(unique_colors))
