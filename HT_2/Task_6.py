@@ -1,15 +1,16 @@
 # The function takes the function into the parameters and multiplies the value five times.
 def decorator(func):
-    def wrapper(*args):
+    def wrapper(name):
         print("//////////////////")
-        result = func(*args)
-        print("//////////////////")
-        return result * 5
+        result = 'Your name: ' + name
+        return result
+
     return wrapper
 
 
 @decorator
-def is_my_name(number):
-    return number
+def is_my_name(name):
+    print(name)
 
-print(is_my_name(20))
+
+print(is_my_name('sashka'))

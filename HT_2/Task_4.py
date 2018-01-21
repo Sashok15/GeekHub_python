@@ -21,7 +21,7 @@ def func(x, y):
         z = x - y
         return z
     elif x < y:
-        z = y-x
+        z = y - x
         return z
 
 

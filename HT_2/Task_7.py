@@ -5,15 +5,16 @@
 
 def calc(num1, num2, operation):
     if operation == "+":
-        return num1+num2
+        return num1 + num2
     elif operation == '-':
-        return num1-num2
+        return num1 - num2
     elif operation == '*':
-        return num1*num2
+        return num1 * num2
     elif operation == '/':
-        return num1/num2
+        return num1 / num2
     else:
-        return 'fiasko. Change operation'
+        return 'Oops. Change operation'
+
 
 print(calc(2, 5, '+'))
 print(calc(2, 5, '-'))
