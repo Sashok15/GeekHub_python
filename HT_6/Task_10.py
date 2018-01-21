@@ -27,6 +27,7 @@ class Human(object):
 class Cup(object):
     capacity = 0
 
+
 h1 = Human('dima', 20)
 print(Human.count_instance())  # 1 instance
 

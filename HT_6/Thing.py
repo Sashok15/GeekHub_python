@@ -14,6 +14,7 @@
 class Thing(object):
     pass
 
+
 print(type(Thing))  # <class 'type'>
 
 t = Thing
@@ -26,6 +27,7 @@ print(type(t))  # <class '__main__.Thing'>
 class Thing2(object):
     letters = "abs"
 
+
 print(Thing2.letters)
 
 
@@ -33,8 +35,6 @@ class Thing3(object):
     def __init__(self, letters):
         self.letters = letters
 
+
 t3 = Thing3("xyz")
 print(t3.letters)
-
-
-

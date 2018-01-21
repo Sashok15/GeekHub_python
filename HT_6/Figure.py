@@ -34,7 +34,8 @@ class Square(Figure):
         self.side = side
 
     def show_all_info(self):
-        return self.side,  self.color
+        return self.side, self.color
+
 
 # example for instance of class Oval
 figure_1 = Oval(large_axis=50, small_axis=30)
@@ -51,4 +52,3 @@ print(figure_2.show_all_info())  # (10, 'Blue')
 
 figure_2.change_color("Black")
 print(figure_2.show_all_info())  # (10, 'Black')
-

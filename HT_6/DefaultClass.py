@@ -16,6 +16,7 @@ class DefaultClass(object):
         self.symbol = symbol
         self.number = number
 
+
 dc = DefaultClass("Class", "C", 23)
 print(dc.name, dc.symbol, dc.number)  # Class C 23
 
@@ -34,9 +35,3 @@ class DefaultClass1(object):
 dict_ = {'name': 'Vasya', 'l_name': 'Pupkin', 'age': 20}
 user = DefaultClass1(dict_)
 print(user.get_info())  # ['Vasya', 'Pupkin', 20]
-
-
-
-
-
-

@@ -24,6 +24,7 @@ class C(B):
         self.c1 = c1
         self.c2 = c2
 
+
 a = A('a1', 'a2')
 b = B('b1', 'b2')
 print(b.a1)  # a1b
@@ -31,4 +32,3 @@ print(b.a1)  # a1b
 c = C('c1', 'c2')
 print(c.a1)  # a1b
 print(c.b1)  # b1c
-

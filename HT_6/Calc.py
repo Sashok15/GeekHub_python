@@ -47,4 +47,3 @@ print(my_calc.mult_num(6, 3))  # 18
 print(my_calc.add_num(6, 3))  # 9
 print(my_calc.sub_num(6, 3))  # 3
 print(my_calc.div_num(6, 3))  # 2.0
-

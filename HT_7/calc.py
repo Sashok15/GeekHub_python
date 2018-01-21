@@ -1,5 +1,5 @@
 import os
-from config import folder_path, file_txt_path
+from config import *
 
 
 class Calc(object):
@@ -40,9 +40,9 @@ class Calc(object):
 
     def add_result_in_file(self):
         if self.last_result:
-            if not os.path.exists(folder_path):
-                os.makedirs(folder_path)
-            with open(file_txt_path, 'a') as f:
+            if not os.path.exists(PATH_REPORTS):
+                os.makedirs(PATH_REPORTS)
+            with open(PATH_RESULT, 'a') as f:
                 result_in_file = str(self.x) + str(self.operation) + \
                                  str(self.y) + " = " + str(self.last_result)+'\n'
                 print(result_in_file)
