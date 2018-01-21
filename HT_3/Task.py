@@ -10,13 +10,13 @@ def generate_list():
         list_int.append(randint(0, 99))
         list_float.append(uniform(0, 99))
 
+
 generate_list()
 
 # create a copies int lists for each sort function
 list_int_selection_sort = list_int[:]
 list_int_insertion_sort = list_int[:]
 list_int_bubble_sort = list_int[:]
-
 
 # create a copies float lists for each sort function
 list_float_selection_sort = list_float[:]
@@ -38,13 +38,13 @@ def selection_sort(arr):
         return arr
     for i in range(len(arr)):
         k = i
-        for j in range(i+1, len(arr)):
+        for j in range(i + 1, len(arr)):
             if arr[j] < arr[k]:
                 k = j
         if k != i:
             var = arr[k]
-            for n in range(k, i-1, -1):
-                arr[n] = arr[n-1]
+            for n in range(k, i - 1, -1):
+                arr[n] = arr[n - 1]
             arr[i] = var
     end_time = time.time()
     my_time = end_time - start_time
@@ -69,12 +69,13 @@ def bubble_sort(arr):
     if len(arr) == 0:
         return arr
     for i in range(len(arr)):
-        for j in range(len(arr)-1, i, -1):
-            if arr[j] < arr[j-1]:
-                arr[j], arr[j-1] = arr[j-1], arr[j]
+        for j in range(len(arr) - 1, i, -1):
+            if arr[j] < arr[j - 1]:
+                arr[j], arr[j - 1] = arr[j - 1], arr[j]
     end_time = time.time()
     my_time = end_time - start_time
     return my_time
+
 
 selection_time = selection_sort(list_int_selection_sort)
 insertion_time = insertion_sort(list_int_insertion_sort)

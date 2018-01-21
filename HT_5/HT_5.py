@@ -7,12 +7,11 @@ import re
 
 from config import *
 
-if not os.path.exists(FOLDER_PATH):
-    os.makedirs(FOLDER_PATH)
+if not os.path.exists(PATH_REPORTS):
+    os.makedirs(PATH_REPORTS)
     logging.info("Create folder 'reports'")
 
-
-logging.basicConfig(filename=LOGGING_PATH, level=logging.INFO,
+logging.basicConfig(filename=PATH_LOGS, level=logging.INFO,
                     format='%(asctime)s:%(levelname)s:%(message)s')
 
 arg_parser = argparse.ArgumentParser(
@@ -26,33 +25,33 @@ options = arg_parser.parse_args()
 
 logging.info("Program started")
 
-if options.category in CHOICES:
+if options.category in CATEGORIES:
     print(options)
-    logging.info("User selected true-category: "+options.category)
+    logging.info("User selected true-category: " + options.category)
 elif options.category is None:
     logging.info("User did`t select nothing. Appointed default category")
 else:
-    logging.error('User selected non-correct category: '+options.category)
-    raise Exception("Error! not correct the parameters"+options.category)
+    logging.error('User selected non-correct category: ' + options.category)
+    raise Exception("Error! not correct the parameters" + options.category)
 
 data = []
 # select url under the category
 logging.info("Check category in url")
 try:
     # choices['askstories', 'showstories', 'newstories', 'jobstories']
-    if options.category == CHOICES[0]:
+    if options.category == CATEGORIES[0]:
         response = requests.get(URL_FOR_ASK, timeout=5)
         data = response.json()
 
-    elif options.category == CHOICES[1]:
+    elif options.category == CATEGORIES[1]:
         response = requests.get(URL_FOR_SHOW, timeout=5)
         data = response.json()
 
-    elif options.category == CHOICES[2]:
+    elif options.category == CATEGORIES[2]:
         response = requests.get(URL_FOR_NEW, timeout=5)
         data = response.json()
 
-    elif options.category == CHOICES[3]:
+    elif options.category == CATEGORIES[3]:
         response = requests.get(URL_FOR_JOB, timeout=5)
         data = response.json()
     else:
@@ -68,7 +67,7 @@ category_info = []
 for item in data:
     try:
         url = 'https://hacker-news.firebaseio.com/' \
-              'v0/item/'+str(item)+'.json?print=pretty'
+              'v0/item/' + str(item) + '.json?print=pretty'
         response = requests.get(url, timeout=5)
         item_info = response.json()
         if item_info['score'] >= SCORE and item_info['time'] >= FROM_DATE:
@@ -80,7 +79,7 @@ for item in data:
         continue
 logging.info('found all files by filter')
 title = ['number', options.category]
-with open(CSV_PATH, "a", newline='') as f:
+with open(PATH_CSV, "a", newline='') as f:
     writer = csv.writer(f, quoting=csv.QUOTE_ALL)
     writer.writerow(title)
     line_id = 1

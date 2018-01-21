@@ -1,11 +1,10 @@
 # path
-FOLDER_PATH = "/reports"
-LOGGING_PATH = "reports/hn_parser.log"
-CSV_PATH = "reports/report.csv"
+PATH_REPORTS = "/reports"
+PATH_LOGS = "reports/hn_parser.log"
+PATH_CSV = "reports/report.csv"
 
 # parameters
-CHOICES = ['askstories', 'showstories', 'newstories', 'jobstories']
-DEFAULT_PARAMETER = 'newstories'
+CATEGORIES = ['askstories', 'showstories', 'newstories', 'jobstories']
 
 # filsters
 FROM_DATE = 1510852024
