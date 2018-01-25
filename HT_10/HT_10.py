@@ -77,6 +77,7 @@ class Parser(object):
                         url = 'url'
                     info.extend([id, title, time, descendants, by, kids, type, score, text, url])
                     category_info.append(info)
+                    print(category_info)
             except UnicodeEncodeError:
                 logging.ERROR('This is an error message. Unicode encode trouble. '
                               'Check data in request!!!')
@@ -107,8 +108,9 @@ class Parser(object):
         id_from_db = Parser.get_id_from_db(category)
         for temp_list in my_list:
             if temp_list[0] in id_from_db:
-                cursor.execute(sql.SQL("""UPDATE {} SET title = %S, TIME = %S, descendants = %S, BY = %S, kids = %S, 
-                                          TYPE = %S, score = %S, TEXT = %S, url = %S WHERE id = %S;"""
+                print('update')
+                cursor.execute(sql.SQL("""UPDATE {} SET title = %s, TIME = %s, descendants = %s, BY = %s, kids = %s, 
+                                          TYPE = %s, score = %s, TEXT = %s, url = %s WHERE id = %s;"""
                                        ).format(sql.Identifier(category)),
                                (temp_list[1], temp_list[2], temp_list[3],
                                 temp_list[4], str(temp_list[5]), temp_list[6], temp_list[7],
@@ -116,7 +118,7 @@ class Parser(object):
             else:
                 print('insert')
                 cursor.execute(sql.SQL("""INSERT INTO {} (id, title, TIME, descendants, BY, kids, TYPE, score, TEXT, url)
-                                              VALUES (%S, %S, %S, %S, %S, %S, %S, %S, %S, %S);"""
+                                              VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s);"""
                                        ).format(sql.Identifier(category)),
                                (temp_list[0], temp_list[1], temp_list[2], temp_list[3],
                                 temp_list[4], str(temp_list[5]), temp_list[6], temp_list[7],
@@ -163,8 +165,8 @@ if __name__ == '__main__':
     if options.category in CHOICES:
         print(options)
         logging.info("User selected true-category: " + options.category)
-        # pars.write_data_in_db(pars.get_for_one_category(), options.category)
-        Parser.write_all_data_to_html(options.category)
+        pars.write_data_in_db(pars.get_for_one_category(), options.category)
+        # Parser.write_all_data_to_html(options.category)
     elif options.category is None:
         logging.info("User did`t select nothing. Appointed default category")
     else:

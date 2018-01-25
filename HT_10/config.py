@@ -117,13 +117,13 @@ def get_html():
                                     <div class="card">
                                         <div class="card-header" role="tab" id="headingFour">
                                             <h5 class="mb-0">
-                                                <a class="collapsed" data-toggle="collapse" href="#collapseThree" role="button" aria-expanded="false"
-                                                   aria-controls="collapseThree">
+                                                <a class="collapsed" data-toggle="collapse" href="#collapseFour" role="button" aria-expanded="false"
+                                                   aria-controls="collapseFour">
                                                     jobstories
                                                 </a>
                                             </h5>
                                         </div>
-                                        <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+                                        <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
                                             <div class="card-body">
                                                 <table class="table">
                                                     <thead>
