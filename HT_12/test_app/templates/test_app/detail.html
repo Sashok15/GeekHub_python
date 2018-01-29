@@ -1,0 +1,19 @@
+<h1>{{ message.message_text }}</h1>
+{% if error_message %}
+    <p><strong>{{ error_message }}</strong></p>
+{% endif %}
+<form action="{% url 'test_app:vote' message.id %}" method="post">
+{% csrf_token %}
+{% for comment in message.comment_set.all %}
+    <input type="radio" name="comment" id="comment{{ forloop.counter }}"
+           value="{{ comment.id }}">
+    <label for="comment{{ forloop.counter }}">{{ comment.comment }}</label></br>
+{% endfor %}
+    <input type="submit" value="Vote">
+</form>
+
+{#<ul>#}
+{#    {% for comment in message.comment_set.all %}#}
+{#        <li>{{ comment.comment_text }}</li>#}
+{#    {% endfor %}#}
+{#</ul>#}

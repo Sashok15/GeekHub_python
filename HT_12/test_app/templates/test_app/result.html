@@ -1,0 +1,10 @@
+<h1>{{ message.message_text }}</h1>
+
+<ul>
+    {% for comment in message.comment_set.all %}
+        <li>{{ comment.comment }} -- {{ comment.votes }}
+            vote{{ comment.votes|pluralize }}</li>
+    {% endfor %}
+</ul>
+
+<a href="{% url 'test_app:detail'  message.id%}"></a>
