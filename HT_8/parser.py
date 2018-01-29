@@ -25,6 +25,22 @@ id_author = 0
 
 
 def parse(html):
+    # text
+    text_data = []
+
+    # authors
+    author_name = []
+    author_url = []
+    author_born_date = []
+    author_born_place = []
+    author_about = []
+
+    # tags
+    tags_name = []
+    tags_url = []
+    tags_text = []
+    tags_author = []
+    tags_author_url = []
     soup = BeautifulSoup(html.decode('utf-8'), 'lxml')
     logging.info('parse start')
     for item in soup.find_all('div', class_='quote'):
@@ -55,8 +71,8 @@ def parse(html):
                                                   },
                                        'tags': {'tags_name': tags_name_for_search,
                                                 'tags_url': tags_url_for_search}})
+        logging.info('parse authors')
         for i in author_url:
-            logging.info('parse authors')
             soup_for_author = BeautifulSoup(get_info_site(URL + i), 'lxml')
             for ele in soup_for_author.find_all('div', class_='author-details'):
                 author_born_date.append(ele.contents[2].contents[2].contents[0])
