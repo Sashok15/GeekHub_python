@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}Cart{% endblock %}
+
+{% block content %}
+    <div class="container">
+    {% for product in products %}
+        <li>{{ product.title }} <a class="delete-item" href="{% url "product:remove" product.id %}">x{{ product.id }}</a></li>
+    {% endfor %}
+    Total_price:{{ total_price }} <br>
+    Total_count:{{ total_count }} <br>
+        <div class="row">
+            <div class="col-6 col-md-4">
+                <form action="{% url "product:order" %}" method="POST">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <table class="table">
+                            {{ form }}
+                        </table>
+                    </div>
+                    <input type="submit" class="btn btn-primary" value="Сделать заказ"/>
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
