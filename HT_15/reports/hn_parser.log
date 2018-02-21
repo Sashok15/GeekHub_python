@@ -1,0 +1,977 @@
+2018-02-19 19:09:22,434:INFO:finish parse jobstories
+2018-02-19 19:09:22,935:INFO:save in db jobstories
+2018-02-19 19:12:46,538:WARNING:Not Found: /
+2018-02-19 19:12:46,679:WARNING:Not Found: /
+2018-02-19 19:13:05,056:INFO:finish parse jobstories
+2018-02-19 19:13:05,258:INFO:save in db jobstories
+2018-02-19 19:14:18,256:INFO:finish parse jobstories
+2018-02-19 19:14:18,461:INFO:save in db jobstories
+2018-02-19 19:27:25,200:WARNING:Not Found: /category/askstories
+2018-02-19 19:29:34,688:WARNING:Not Found: /category/askstories
+2018-02-19 19:30:07,214:WARNING:Not Found: /category/askstories
+2018-02-19 19:30:40,254:ERROR:Internal Server Error: /category/askstories
+Traceback (most recent call last):
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/my_api/views.py", line 154, in api_view_list_category
+    articles = Article.objects.filer(pk=1)
+AttributeError: 'Manager' object has no attribute 'filer'
+2018-02-19 19:30:41,754:ERROR:Internal Server Error: /category/askstories
+Traceback (most recent call last):
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/my_api/views.py", line 154, in api_view_list_category
+    articles = Article.objects.filer(pk=1)
+AttributeError: 'Manager' object has no attribute 'filer'
+2018-02-19 19:33:44,459:ERROR:Internal Server Error: /category/askstories
+Traceback (most recent call last):
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/my_api/views.py", line 154, in api_view_list_category
+    articles = Article.objects.all(pk=1)
+TypeError: all() got an unexpected keyword argument 'pk'
+2018-02-19 19:51:55,014:ERROR:Internal Server Error: /category/askstories
+Traceback (most recent call last):
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/my_api/views.py", line 177, in api_view_list_category
+    return Response(serializer.data, status=status.HTTP_200_OK)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/serializers.py", line 742, in data
+    ret = super(ListSerializer, self).data
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/serializers.py", line 660, in to_representation
+    self.child.to_representation(item) for item in iterable
+TypeError: 'Article' object is not iterable
+2018-02-19 20:02:19,979:ERROR:Internal Server Error: /category/askstories
+Traceback (most recent call last):
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/my_api/views.py", line 176, in api_view_list_category
+    articles = Article.objects.filter(fk=1)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/query.py", line 836, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/query.py", line 854, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1253, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1277, in _add_q
+    split_subq=split_subq,
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1153, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1015, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1379, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'fk' into field. Choices are: by, category_id, category_id_id, descendants, id, id_article, kids, score, text, time, title, type, url
+2018-02-19 20:28:31,182:INFO:finish parse showstories
+2018-02-19 20:28:33,157:INFO:save in db showstories
+2018-02-19 20:40:26,354:INFO:finish parse newstories
+2018-02-19 20:40:33,402:INFO:save in db newstories
+2018-02-19 21:17:42,446:ERROR:Internal Server Error: /category/jobstories/16404959
+Traceback (most recent call last):
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/my_api/views.py", line 157, in api_view_detail_category
+    article = Article.objects.get(id_article=article_id)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/query.py", line 407, in get
+    (self.model._meta.object_name, num)
+my_api.models.MultipleObjectsReturned: get() returned more than one Article -- it returned 3!
+2018-02-19 21:18:40,263:ERROR:Internal Server Error: /category/jobstories/16403899
+Traceback (most recent call last):
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/my_api/views.py", line 157, in api_view_detail_category
+    article = Article.objects.get(id_article=article_id)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/query.py", line 407, in get
+    (self.model._meta.object_name, num)
+my_api.models.MultipleObjectsReturned: get() returned more than one Article -- it returned 3!
+2018-02-19 21:19:31,193:ERROR:Internal Server Error: /category/jobstories/1
+Traceback (most recent call last):
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/my_api/views.py", line 158, in api_view_detail_category
+    print(article)
+TypeError: __str__ returned non-string (type tuple)
+2018-02-19 21:21:29,441:ERROR:Internal Server Error: /category/jobstories/115
+Traceback (most recent call last):
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/my_api/views.py", line 157, in api_view_detail_category
+    article = Article.objects.get(id=article_id)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+my_api.models.DoesNotExist: Article matching query does not exist.
+2018-02-19 21:23:42,041:WARNING:Not Found: /category/jobstories/115
+2018-02-20 15:43:41,772:WARNING:Not Found: /favicon.ico
+2018-02-20 15:44:11,362:INFO:finish parse jobstories
+2018-02-20 15:44:11,643:INFO:save in db jobstories
+2018-02-20 15:58:44,943:INFO:finish parse jobstories
+2018-02-20 16:00:20,911:INFO:save in db jobstories
+2018-02-20 16:05:33,380:INFO:finish parse jobstories
+2018-02-20 16:05:34,379:INFO:save in db jobstories
+2018-02-20 16:14:08,202:INFO:finish parse jobstories
+2018-02-20 16:14:08,750:INFO:save in db jobstories
+2018-02-20 16:42:32,740:INFO:finish parse jobstories
+2018-02-20 16:42:33,176:INFO:save in db jobstories
+2018-02-20 16:45:51,565:INFO:finish parse jobstories
+2018-02-20 16:47:27,464:INFO:finish parse jobstories
+2018-02-20 16:47:27,882:INFO:save in db jobstories
+2018-02-20 16:51:40,939:INFO:finish parse jobstories
+2018-02-20 16:51:41,340:INFO:save in db jobstories
+2018-02-20 17:08:21,227:INFO:finish parse jobstories
+2018-02-20 17:09:29,282:INFO:save in db jobstories
+2018-02-20 17:09:58,351:INFO:finish parse jobstories
+2018-02-20 17:09:58,639:INFO:save in db jobstories
+2018-02-20 17:12:49,796:INFO:finish parse jobstories
+2018-02-20 17:12:50,074:INFO:save in db jobstories
+2018-02-20 17:16:41,235:INFO:finish parse showstories
+2018-02-20 17:16:42,039:INFO:save in db showstories
+2018-02-20 17:26:14,779:INFO:finish parse newstories
+2018-02-20 17:26:23,446:INFO:save in db newstories
+2018-02-20 17:41:40,440:INFO:finish parse askstories
+2018-02-20 17:41:42,492:INFO:save in db askstories
+2018-02-20 18:03:57,690:ERROR:Internal Server Error: /category/jobstories/2
+Traceback (most recent call last):
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/my_api/views.py", line 158, in api_view_detail_category
+    article = Article.objects.filter(category__name=category_name, id=article_id)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/query.py", line 836, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/query.py", line 854, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1253, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1277, in _add_q
+    split_subq=split_subq,
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1153, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1015, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1379, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'category' into field. Choices are: by, category_id, category_id_id, descendants, id, id_article, kids, score, text, time, title, type, url
+2018-02-20 18:08:03,234:ERROR:Internal Server Error: /category/jobstories/
+Traceback (most recent call last):
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/my_api/views.py", line 158, in api_view_detail_category
+    article = Article.objects.filter(category__name=category_name, id=article_id)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/query.py", line 836, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/query.py", line 854, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1253, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1277, in _add_q
+    split_subq=split_subq,
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1215, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1085, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/lookups.py", line 18, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/lookups.py", line 68, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py", line 947, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+2018-02-20 18:08:27,513:ERROR:Internal Server Error: /category/jobstories/
+Traceback (most recent call last):
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/my_api/views.py", line 158, in api_view_detail_category
+    article = Article.objects.filter(category__name=category_name, id=article_id)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/query.py", line 836, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/query.py", line 854, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1253, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1277, in _add_q
+    split_subq=split_subq,
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1215, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1085, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/lookups.py", line 18, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/lookups.py", line 68, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py", line 947, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+2018-02-20 18:08:48,972:ERROR:Internal Server Error: /category/jobstories/1
+Traceback (most recent call last):
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/my_api/views.py", line 158, in api_view_detail_category
+    article = Article.objects.filter(category__name=category_name, id=article_id)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/query.py", line 836, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/query.py", line 854, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1253, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1277, in _add_q
+    split_subq=split_subq,
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1153, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1015, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1379, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'category' into field. Choices are: by, category_id, category_id_id, descendants, id, id_article, kids, score, text, time, title, type, url
+2018-02-20 18:09:12,767:ERROR:Internal Server Error: /category/jobstories/900
+Traceback (most recent call last):
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/my_api/views.py", line 158, in api_view_detail_category
+    article = Article.objects.filter(category__name=category_name, id=article_id)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/query.py", line 836, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/query.py", line 854, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1253, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1277, in _add_q
+    split_subq=split_subq,
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1153, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1015, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1379, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'category' into field. Choices are: by, category_id, category_id_id, descendants, id, id_article, kids, score, text, time, title, type, url
+2018-02-20 18:09:30,674:ERROR:Internal Server Error: /category/jobstories/834
+Traceback (most recent call last):
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/my_api/views.py", line 158, in api_view_detail_category
+    article = Article.objects.filter(category__name=category_name, id=article_id)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/query.py", line 836, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/query.py", line 854, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1253, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1277, in _add_q
+    split_subq=split_subq,
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1153, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1015, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1379, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'category' into field. Choices are: by, category_id, category_id_id, descendants, id, id_article, kids, score, text, time, title, type, url
+2018-02-20 18:11:58,175:ERROR:Internal Server Error: /category/jobstories/834
+Traceback (most recent call last):
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/my_api/views.py", line 158, in api_view_detail_category
+    article = Article.objects.filter(category__name=category_name, id=article_id)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/query.py", line 836, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/query.py", line 854, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1253, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1277, in _add_q
+    split_subq=split_subq,
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1153, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1015, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1379, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'category' into field. Choices are: by, category_id, category_id_id, descendants, id, id_article, kids, score, text, time, title, type, url
+2018-02-20 18:12:43,792:ERROR:Internal Server Error: /category/jobstories/834
+Traceback (most recent call last):
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/my_api/views.py", line 158, in api_view_detail_category
+    article = Article.objects.filter(category__name=category_name).filter(id=article_id)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/query.py", line 836, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/query.py", line 854, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1253, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1277, in _add_q
+    split_subq=split_subq,
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1153, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1015, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1379, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'category' into field. Choices are: by, category_id, category_id_id, descendants, id, id_article, kids, score, text, time, title, type, url
+2018-02-20 18:18:44,571:ERROR:Internal Server Error: /category/jobstories/834
+Traceback (most recent call last):
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/my_api/views.py", line 158, in api_view_detail_category
+    article = Article.objects.filter(category__name=category_name).filter(id=article_id)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/query.py", line 836, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/query.py", line 854, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1253, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1277, in _add_q
+    split_subq=split_subq,
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1153, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1015, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1379, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'category' into field. Choices are: by, category_id, category_id_id, descendants, id, id_article, kids, score, text, time, title, type, url
+2018-02-20 18:19:02,189:ERROR:Internal Server Error: /category/jobstories/834
+Traceback (most recent call last):
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/my_api/views.py", line 158, in api_view_detail_category
+    article = Article.objects.filter(category__name=category_name)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/query.py", line 836, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/query.py", line 854, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1253, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1277, in _add_q
+    split_subq=split_subq,
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1153, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1015, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1379, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'category' into field. Choices are: by, category_id, category_id_id, descendants, id, id_article, kids, score, text, time, title, type, url
+2018-02-20 19:34:44,483:WARNING:Not Found: /favicon.ico
+2018-02-20 20:44:02,184:INFO:finish parse jobstories
+2018-02-20 20:44:02,525:INFO:save in db jobstories
+2018-02-20 20:44:04,412:ERROR:Internal Server Error: /category/execute/jobstories
+Traceback (most recent call last):
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/my_api/views.py", line 130, in api_parse_category
+    send_email(amount, elapsed_time)
+  File "/home/sashok15/PycharmProjects/HT_15/my_api/mail_custom.py", line 61, in send_email
+    s.login(LOGIN, PASSWORD)
+  File "/usr/lib/python3.5/smtplib.py", line 729, in login
+    raise last_exception
+  File "/usr/lib/python3.5/smtplib.py", line 720, in login
+    initial_response_ok=initial_response_ok)
+  File "/usr/lib/python3.5/smtplib.py", line 641, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (534, b'5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbt8\n5.7.14 uZVAWs43AGRJvQlEVMP0W4EnBskVOqirHIMo1GuENec5xE0m5o79tQocKbxhKNe2sCK6W2\n5.7.14 RPkIk2bIB1OcAVzIyMzM2SWTDpMICSszR00Y4--R0k7pMqNAE7hyHCDNAhc9rzZCZO0YyJ\n5.7.14 gw6RVD4sr-FHTQTwCL1zMRepoOi8PmHpdVNYjSI5sYdDS2JX2e2ye_T3yigGVfXz6rrNJx\n5.7.14 tMDUZ1XLF-M-S2T_wkD2rsppR2ALU> Please log in via your web browser and\n5.7.14 then try again.\n5.7.14  Learn more at\n5.7.14  https://support.google.com/mail/answer/78754 i12sm6195486wmc.35 - gsmtp')
+2018-02-20 20:52:19,667:INFO:finish parse jobstories
+2018-02-20 20:52:20,057:INFO:save in db jobstories
+2018-02-20 20:52:20,936:ERROR:Internal Server Error: /category/execute/jobstories
+Traceback (most recent call last):
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/my_api/views.py", line 130, in api_parse_category
+    send_email(amount, elapsed_time)
+  File "/home/sashok15/PycharmProjects/HT_15/my_api/mail_custom.py", line 61, in send_email
+    s.login(LOGIN, PASSWORD)
+  File "/usr/lib/python3.5/smtplib.py", line 729, in login
+    raise last_exception
+  File "/usr/lib/python3.5/smtplib.py", line 720, in login
+    initial_response_ok=initial_response_ok)
+  File "/usr/lib/python3.5/smtplib.py", line 641, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (534, b'5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbsw\n5.7.14 o1_CZygofWGAsQ_ogvCOHPjbjvdqs8WfO8AGmpMJvWaD6qiMLHgvOOSaKFkVuk8Sxsp5Rv\n5.7.14 wwRHYhTZi6DxpG8r7tG8si2X9lJOyACdiUTxfmW_DX83hhOrVmDy4-rGBfiy0nOP2U9AnK\n5.7.14 NY7ja1Y_eMsUseSDOA_eq_lQvXwdRp5mGyHg3J4o2X1TJACnzM8dpXL3uyJD2VS-Lvj62c\n5.7.14 KKcDooaZKBflHSlLCPT4XxA4tKwLE> Please log in via your web browser and\n5.7.14 then try again.\n5.7.14  Learn more at\n5.7.14  https://support.google.com/mail/answer/78754 c143sm25035568wmd.48 - gsmtp')
+2018-02-20 20:57:21,015:INFO:finish parse jobstories
+2018-02-20 20:57:21,345:INFO:save in db jobstories
+2018-02-20 20:57:22,243:ERROR:Internal Server Error: /category/execute/jobstories
+Traceback (most recent call last):
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/my_api/views.py", line 130, in api_parse_category
+    send_email(amount, elapsed_time)
+  File "/home/sashok15/PycharmProjects/HT_15/my_api/mail_custom.py", line 61, in send_email
+    s.login(LOGIN, PASSWORD)
+  File "/usr/lib/python3.5/smtplib.py", line 729, in login
+    raise last_exception
+  File "/usr/lib/python3.5/smtplib.py", line 720, in login
+    initial_response_ok=initial_response_ok)
+  File "/usr/lib/python3.5/smtplib.py", line 641, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (534, b'5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbuQ\n5.7.14 2FGauJLiKJNnE1qM9FZgzZK4hrJ30ni-w7Bx5oxN5EyNQqpAHkNrLns61y54NRP3K0ddsK\n5.7.14 tlBjzkCbKTqXlvUPw6pduaqmPzcSoTX8b_UVC2EHTxIP1NTqmN795PIge_gju3CUY4PWdX\n5.7.14 fZ0xbF8qEllLLHITfN6WUQVCl_vgG0TyDgPCY7g1hclCh1j3uZyOYvv_SS27Oh9ndg_D7g\n5.7.14 mO2KMJP1z_5MIsZ8xJlUEI4_eqOxI> Please log in via your web browser and\n5.7.14 then try again.\n5.7.14  Learn more at\n5.7.14  https://support.google.com/mail/answer/78754 y8sm11018730wrg.16 - gsmtp')
+2018-02-20 20:58:25,869:INFO:finish parse jobstories
+2018-02-20 20:58:26,252:INFO:save in db jobstories
+2018-02-20 20:58:27,105:ERROR:Internal Server Error: /category/execute/jobstories
+Traceback (most recent call last):
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/my_api/views.py", line 130, in api_parse_category
+    send_email(amount, elapsed_time)
+  File "/home/sashok15/PycharmProjects/HT_15/my_api/mail_custom.py", line 61, in send_email
+    s.login(LOGIN, PASSWORD)
+  File "/usr/lib/python3.5/smtplib.py", line 729, in login
+    raise last_exception
+  File "/usr/lib/python3.5/smtplib.py", line 720, in login
+    initial_response_ok=initial_response_ok)
+  File "/usr/lib/python3.5/smtplib.py", line 641, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (534, b'5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbu1\n5.7.14 blZua1l1vQzfVgci8UuxH9XqBvPZBwoQtv0-xPveALZClg46CIvRih5ZKc9-fJyUaVmGyL\n5.7.14 e1b_gL76866pRffB-DNWytZ89QznbkEoQ2sy90wNpVE0GzCCWnpC1CZlC-HXhU7xO8dqHR\n5.7.14 LpwmngKXmkiDNfP-pf5KTQeOEv406zTykRJZCosYeZWJI45BL5WTIo-f63fTWTjoEfAOfj\n5.7.14 0H6Or6_-S_Nc9kodBelE8FaqNk4m0> Please log in via your web browser and\n5.7.14 then try again.\n5.7.14  Learn more at\n5.7.14  https://support.google.com/mail/answer/78754 78sm28327877wmm.22 - gsmtp')
+2018-02-20 21:04:52,505:INFO:finish parse jobstories
+2018-02-20 21:04:52,831:INFO:save in db jobstories
+2018-02-20 21:05:03,038:ERROR:Internal Server Error: /category/execute/jobstories
+Traceback (most recent call last):
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/my_api/views.py", line 130, in api_parse_category
+    send_email(amount, elapsed_time)
+  File "/home/sashok15/PycharmProjects/HT_15/my_api/mail_custom.py", line 56, in send_email
+    s = smtplib.SMTP('smtp.gmail.com', 465) #465 587
+  File "/usr/lib/python3.5/smtplib.py", line 251, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/lib/python3.5/smtplib.py", line 337, in connect
+    (code, msg) = self.getreply()
+  File "/usr/lib/python3.5/smtplib.py", line 393, in getreply
+    raise SMTPServerDisconnected("Connection unexpectedly closed")
+smtplib.SMTPServerDisconnected: Connection unexpectedly closed
+2018-02-20 21:06:08,693:INFO:finish parse jobstories
+2018-02-20 21:06:09,274:INFO:save in db jobstories
+2018-02-20 21:06:10,060:ERROR:Internal Server Error: /category/execute/jobstories
+Traceback (most recent call last):
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/my_api/views.py", line 130, in api_parse_category
+    send_email(amount, elapsed_time)
+  File "/home/sashok15/PycharmProjects/HT_15/my_api/mail_custom.py", line 61, in send_email
+    s.login(LOGIN, PASSWORD)
+  File "/usr/lib/python3.5/smtplib.py", line 729, in login
+    raise last_exception
+  File "/usr/lib/python3.5/smtplib.py", line 720, in login
+    initial_response_ok=initial_response_ok)
+  File "/usr/lib/python3.5/smtplib.py", line 641, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (534, b'5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbsn\n5.7.14 FlM3In1BRZee2vWjbgK-00AvOPRviP_wMj9aVt_lzdomB3Los8MEt1gYsM1q6XKwD4SiqE\n5.7.14 AUWOv2QsFWLQeG8lFl7y6PKrT3onBr9v_Zqtj9d57Fx2hApHQEPOWEeDmwTAKA0DkCEZvp\n5.7.14 u0hvt7ki8yDV5weMIaRQBUGMZDPvNRx822kAKHkH0SvQcnqb4AycZIKXuJm8G4jyKh7M3U\n5.7.14 66ooU2fcrpchlS17U7y-BgSUL89ck> Please log in via your web browser and\n5.7.14 then try again.\n5.7.14  Learn more at\n5.7.14  https://support.google.com/mail/answer/78754 p5sm9668850wmd.9 - gsmtp')
+2018-02-20 22:22:36,582:INFO:finish parse jobstories
+2018-02-20 22:22:37,032:INFO:save in db jobstories
+2018-02-20 22:22:37,970:ERROR:Internal Server Error: /category/execute/jobstories
+Traceback (most recent call last):
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/my_api/views.py", line 130, in api_parse_category
+    send_email(amount, elapsed_time)
+  File "/home/sashok15/PycharmProjects/HT_15/my_api/mail_custom.py", line 61, in send_email
+    s.login(LOGIN, PASSWORD)
+  File "/usr/lib/python3.5/smtplib.py", line 729, in login
+    raise last_exception
+  File "/usr/lib/python3.5/smtplib.py", line 720, in login
+    initial_response_ok=initial_response_ok)
+  File "/usr/lib/python3.5/smtplib.py", line 641, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (534, b'5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbsZ\n5.7.14 RD-tEI01BA_gNmv-mlvaQoEbWWP0mFbVAqHfQO5zQN2FFt4goF7ZzOrUuwH2PF8DdDzseY\n5.7.14 Fmj5XpFCJp0twOGRX1D04PClcOu2Y2qslAhSfDO7uttZDQdScMAtJPzZMDoo4vnMYlLzqG\n5.7.14 uGOkKY6sUUek2s_4qE9IOG9Ju-YtG_Ksiivk9vHXoee9pGK9ArelwrCBONs1mViHUFX5pQ\n5.7.14 ggfzrJh0jb8EKd-oePSo--fZM9yX8> Please log in via your web browser and\n5.7.14 then try again.\n5.7.14  Learn more at\n5.7.14  https://support.google.com/mail/answer/78754 v63sm42983089wrc.69 - gsmtp')
+2018-02-20 22:28:48,927:INFO:finish parse jobstories
+2018-02-20 22:28:49,258:INFO:save in db jobstories
+2018-02-20 22:28:50,120:ERROR:Internal Server Error: /category/execute/jobstories
+Traceback (most recent call last):
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/my_api/views.py", line 130, in api_parse_category
+    send_email(amount, elapsed_time)
+  File "/home/sashok15/PycharmProjects/HT_15/my_api/mail_custom.py", line 61, in send_email
+    s.login(LOGIN, PASSWORD)
+  File "/usr/lib/python3.5/smtplib.py", line 729, in login
+    raise last_exception
+  File "/usr/lib/python3.5/smtplib.py", line 720, in login
+    initial_response_ok=initial_response_ok)
+  File "/usr/lib/python3.5/smtplib.py", line 641, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (534, b'5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbvy\n5.7.14 8Lx8iBsWq6OAiilX3ENunRidrG5WiJDsOcNPME2luyLykaMYdNup193OHETuZzp05vKnow\n5.7.14 __gsDskRKLYyKKFJUmerDBhRQ6snWPMHtXkwwdJ2XK6wVrXWQQ_B2KunZzpx9AhoDF8JHV\n5.7.14 jKLOMggWqnm9euJz5K0ZeUU9qWpd_bL883MviXJqHaa0xKMNNg8huB433VizW8hlAYrg01\n5.7.14 42J6yYEX1i8VUevbzSDxM06LgNjjs> Please log in via your web browser and\n5.7.14 then try again.\n5.7.14  Learn more at\n5.7.14  https://support.google.com/mail/answer/78754 f142sm8685111wme.15 - gsmtp')
+2018-02-20 22:33:58,667:INFO:finish parse jobstories
+2018-02-20 22:33:59,042:INFO:save in db jobstories
+2018-02-21 11:16:50,694:WARNING:Not Found: /
+2018-02-21 11:16:51,848:WARNING:Not Found: /favicon.ico
+2018-02-21 11:17:34,079:INFO:finish parse jobstories
+2018-02-21 11:17:34,487:INFO:save in db jobstories
+2018-02-21 11:34:01,996:WARNING:Not Found: /favicon.ico
+2018-02-21 12:34:31,019:WARNING:Not Found: /favicon.ico
+2018-02-21 12:37:50,576:ERROR:Internal Server Error: /category/jobstories/16393177
+Traceback (most recent call last):
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/sashok15/PycharmProjects/HT_15/venv/lib/python3.5/site-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+TypeError: api_view_detail_category() got an unexpected keyword argument 'article_id'
